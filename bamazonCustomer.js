@@ -46,7 +46,7 @@ function productList() {
                         let userSelection = [];
                         for (let i = 0; i < res.length; i++) {
 
-                            userSelection.push(res[i].item_id + ": " + res[i].product_name + "Price: " + res[i].price)
+                            userSelection.push(res[i].item_id + ": " + res[i].product_name + " Price: " + res[i].price)
                         }
                         return userSelection;
                     },
@@ -89,7 +89,7 @@ function userCart(id) {
 
                         if (err) throw err;
 
-                        console.log(`Congrats you own it now. We charged your card: ${total}`);
+                        console.log(`Congrats you own it now. We charged your card $${total}`);
 
                     })
 
